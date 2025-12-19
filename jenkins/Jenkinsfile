@@ -21,6 +21,11 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('InCompleteAlmost') {
+            steps {
+                echo 'Job is almost InComplete!'
+            }
+        }
         stage('CompleteAlmost') {
             steps {
                 echo 'Job is almost Complete!'
